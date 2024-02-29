@@ -17,7 +17,7 @@ export default {
     <div class="destinations">
       <RouterLink v-for="destination in destinations" :key="destination.id" :to="{name: 'destination.show', params: {id: destination.id}}">
         <h1>{{ destination.name }}</h1>
-        <img :src="`src/images/${destination.image}`">
+        <img :src="`./images/${destination.image}`">
       </RouterLink>
     </div>
   </div>
